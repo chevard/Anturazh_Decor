@@ -1,0 +1,204 @@
+C:\Users\admin\source\repos\Diplom\Diplom\obj\Debug\Diplom.csproj.AssemblyReference.cache
+C:\Users\admin\source\repos\Diplom\Diplom\obj\Debug\MainP.baml
+C:\Users\admin\source\repos\Diplom\Diplom\obj\Debug\AutorizationWindow.g.cs
+C:\Users\admin\source\repos\Diplom\Diplom\obj\Debug\MainP.g.cs
+C:\Users\admin\source\repos\Diplom\Diplom\obj\Debug\Pages\CategoriesPage.g.cs
+C:\Users\admin\source\repos\Diplom\Diplom\obj\Debug\Pages\EmailPage.g.cs
+C:\Users\admin\source\repos\Diplom\Diplom\obj\Debug\Pages\EmployeesPage.g.cs
+C:\Users\admin\source\repos\Diplom\Diplom\obj\Debug\Pages\MainPage.g.cs
+C:\Users\admin\source\repos\Diplom\Diplom\obj\Debug\Pages\NotificationsPage.g.cs
+C:\Users\admin\source\repos\Diplom\Diplom\obj\Debug\Pages\PaymentHistoryPage.g.cs
+C:\Users\admin\source\repos\Diplom\Diplom\obj\Debug\Pages\PaymentPage.g.cs
+C:\Users\admin\source\repos\Diplom\Diplom\obj\Debug\Pages\PostVKPage.g.cs
+C:\Users\admin\source\repos\Diplom\Diplom\obj\Debug\Pages\ProfilePage.g.cs
+C:\Users\admin\source\repos\Diplom\Diplom\obj\Debug\Pages\SuppliersPage.g.cs
+C:\Users\admin\source\repos\Diplom\Diplom\obj\Debug\ToastNotificationWindow.g.cs
+C:\Users\admin\source\repos\Diplom\Diplom\obj\Debug\App.g.cs
+C:\Users\admin\source\repos\Diplom\Diplom\obj\Debug\Diplom_Content.g.cs
+C:\Users\admin\source\repos\Diplom\Diplom\obj\Debug\Diplom_MarkupCompile.cache
+C:\Users\admin\source\repos\Diplom\Diplom\obj\Debug\Diplom_MarkupCompile.lref
+C:\Users\admin\source\repos\Diplom\Diplom\bin\Debug\AnturazhBD.mdf
+C:\Users\admin\source\repos\Diplom\Diplom\bin\Debug\AnturazhBD_log.ldf
+C:\Users\admin\source\repos\Diplom\Diplom\bin\Debug\Diplom.exe.config
+C:\Users\admin\source\repos\Diplom\Diplom\bin\Debug\Diplom.exe
+C:\Users\admin\source\repos\Diplom\Diplom\bin\Debug\Diplom.pdb
+C:\Users\admin\source\repos\Diplom\Diplom\bin\Debug\BouncyCastle.Cryptography.dll
+C:\Users\admin\source\repos\Diplom\Diplom\bin\Debug\EntityFramework.dll
+C:\Users\admin\source\repos\Diplom\Diplom\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\admin\source\repos\Diplom\Diplom\bin\Debug\itextsharp.dll
+C:\Users\admin\source\repos\Diplom\Diplom\bin\Debug\LiveCharts.dll
+C:\Users\admin\source\repos\Diplom\Diplom\bin\Debug\LiveCharts.Wpf.dll
+C:\Users\admin\source\repos\Diplom\Diplom\bin\Debug\MahApps.Metro.IconPacks.Core.dll
+C:\Users\admin\source\repos\Diplom\Diplom\bin\Debug\MahApps.Metro.IconPacks.Material.dll
+C:\Users\admin\source\repos\Diplom\Diplom\bin\Debug\MailKit.dll
+C:\Users\admin\source\repos\Diplom\Diplom\bin\Debug\MimeKit.dll
+C:\Users\admin\source\repos\Diplom\Diplom\bin\Debug\Newtonsoft.Json.dll
+C:\Users\admin\source\repos\Diplom\Diplom\bin\Debug\System.Buffers.dll
+C:\Users\admin\source\repos\Diplom\Diplom\bin\Debug\System.Formats.Asn1.dll
+C:\Users\admin\source\repos\Diplom\Diplom\bin\Debug\System.Memory.dll
+C:\Users\admin\source\repos\Diplom\Diplom\bin\Debug\System.Numerics.Vectors.dll
+C:\Users\admin\source\repos\Diplom\Diplom\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Users\admin\source\repos\Diplom\Diplom\bin\Debug\System.Threading.Tasks.Extensions.dll
+C:\Users\admin\source\repos\Diplom\Diplom\bin\Debug\System.ValueTuple.dll
+C:\Users\admin\source\repos\Diplom\Diplom\bin\Debug\BouncyCastle.Cryptography.xml
+C:\Users\admin\source\repos\Diplom\Diplom\bin\Debug\EntityFramework.xml
+C:\Users\admin\source\repos\Diplom\Diplom\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\admin\source\repos\Diplom\Diplom\bin\Debug\itextsharp.xml
+C:\Users\admin\source\repos\Diplom\Diplom\bin\Debug\LiveCharts.pdb
+C:\Users\admin\source\repos\Diplom\Diplom\bin\Debug\LiveCharts.xml
+C:\Users\admin\source\repos\Diplom\Diplom\bin\Debug\LiveCharts.Wpf.pdb
+C:\Users\admin\source\repos\Diplom\Diplom\bin\Debug\LiveCharts.Wpf.xml
+C:\Users\admin\source\repos\Diplom\Diplom\bin\Debug\MahApps.Metro.IconPacks.Core.pdb
+C:\Users\admin\source\repos\Diplom\Diplom\bin\Debug\MahApps.Metro.IconPacks.Core.xml
+C:\Users\admin\source\repos\Diplom\Diplom\bin\Debug\MahApps.Metro.IconPacks.Material.pdb
+C:\Users\admin\source\repos\Diplom\Diplom\bin\Debug\MahApps.Metro.IconPacks.Material.xml
+C:\Users\admin\source\repos\Diplom\Diplom\bin\Debug\MailKit.pdb
+C:\Users\admin\source\repos\Diplom\Diplom\bin\Debug\MailKit.xml
+C:\Users\admin\source\repos\Diplom\Diplom\bin\Debug\MailKit.dll.config
+C:\Users\admin\source\repos\Diplom\Diplom\bin\Debug\MimeKit.pdb
+C:\Users\admin\source\repos\Diplom\Diplom\bin\Debug\MimeKit.xml
+C:\Users\admin\source\repos\Diplom\Diplom\bin\Debug\Newtonsoft.Json.xml
+C:\Users\admin\source\repos\Diplom\Diplom\bin\Debug\System.Buffers.xml
+C:\Users\admin\source\repos\Diplom\Diplom\bin\Debug\System.Formats.Asn1.xml
+C:\Users\admin\source\repos\Diplom\Diplom\bin\Debug\System.Memory.xml
+C:\Users\admin\source\repos\Diplom\Diplom\bin\Debug\System.Numerics.Vectors.xml
+C:\Users\admin\source\repos\Diplom\Diplom\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+C:\Users\admin\source\repos\Diplom\Diplom\bin\Debug\System.Threading.Tasks.Extensions.xml
+C:\Users\admin\source\repos\Diplom\Diplom\bin\Debug\System.ValueTuple.xml
+C:\Users\admin\source\repos\Diplom\Diplom\bin\Debug\ru\EntityFramework.resources.dll
+C:\Users\admin\source\repos\Diplom\Diplom\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+C:\Users\admin\source\repos\Diplom\Diplom\obj\Debug\Pages\ProductsPage.g.cs
+C:\Users\admin\source\repos\Diplom\Diplom\obj\Debug\App.baml
+C:\Users\admin\source\repos\Diplom\Diplom\obj\Debug\AutorizationWindow.baml
+C:\Users\admin\source\repos\Diplom\Diplom\obj\Debug\Pages\CategoriesPage.baml
+C:\Users\admin\source\repos\Diplom\Diplom\obj\Debug\Pages\EmailPage.baml
+C:\Users\admin\source\repos\Diplom\Diplom\obj\Debug\Pages\EmployeesPage.baml
+C:\Users\admin\source\repos\Diplom\Diplom\obj\Debug\Pages\MainPage.baml
+C:\Users\admin\source\repos\Diplom\Diplom\obj\Debug\Pages\NotificationsPage.baml
+C:\Users\admin\source\repos\Diplom\Diplom\obj\Debug\Pages\PaymentHistoryPage.baml
+C:\Users\admin\source\repos\Diplom\Diplom\obj\Debug\Pages\PaymentPage.baml
+C:\Users\admin\source\repos\Diplom\Diplom\obj\Debug\Pages\PostVKPage.baml
+C:\Users\admin\source\repos\Diplom\Diplom\obj\Debug\Pages\ProductsPage.baml
+C:\Users\admin\source\repos\Diplom\Diplom\obj\Debug\Pages\ProfilePage.baml
+C:\Users\admin\source\repos\Diplom\Diplom\obj\Debug\Pages\SuppliersPage.baml
+C:\Users\admin\source\repos\Diplom\Diplom\obj\Debug\ToastNotificationWindow.baml
+C:\Users\admin\source\repos\Diplom\Diplom\obj\Debug\Diplom.g.resources
+C:\Users\admin\source\repos\Diplom\Diplom\obj\Debug\Diplom.Properties.Resources.resources
+C:\Users\admin\source\repos\Diplom\Diplom\obj\Debug\Diplom.csproj.GenerateResource.cache
+C:\Users\admin\source\repos\Diplom\Diplom\obj\Debug\Diplom.csproj.CoreCompileInputs.cache
+C:\Users\admin\source\repos\Diplom\Diplom\obj\Debug\Diplom.csproj.Up2Date
+C:\Users\admin\source\repos\Diplom\Diplom\obj\Debug\Diplom.exe
+C:\Users\admin\source\repos\Diplom\Diplom\obj\Debug\Diplom.pdb
+C:\Users\admin\source\repos\Diplom\Diplom\bin\Debug\PresentationFramework.Aero2.dll
+C:\Users\admin\source\repos\Diplom\Diplom\obj\Debug\AddProductWindow.baml
+C:\Users\admin\source\repos\Diplom\Diplom\obj\Debug\AddProductWindow.g.cs
+C:\Users\admin\source\repos\Diplom\Diplom\obj\Debug\AddCategoryWindow.baml
+C:\Users\admin\source\repos\Diplom\Diplom\obj\Debug\AddCategoryWindow.g.cs
+C:\Users\admin\source\repos\Diplom\Diplom\obj\Debug\AddUserWindow.baml
+C:\Users\admin\source\repos\Diplom\Diplom\obj\Debug\AddUserWindow.g.cs
+C:\Users\admin\source\repos\Diplom\Diplom\obj\Debug\AddSuppliersWindow.baml
+C:\Users\admin\source\repos\Diplom\Diplom\obj\Debug\AddSuppliersWindow.g.cs
+C:\Users\admin\source\repos\Diplom\Diplom\obj\Debug\Pages\PostOKPage.baml
+C:\Users\admin\source\repos\Diplom\Diplom\obj\Debug\Pages\PostOKPage.g.cs
+D:\Diplom — копия\Diplom\bin\Debug\AnturazhBD.mdf
+D:\Diplom — копия\Diplom\bin\Debug\AnturazhBD_log.ldf
+D:\Diplom — копия\Diplom\bin\Debug\Diplom.exe.config
+D:\Diplom — копия\Diplom\bin\Debug\Diplom.exe
+D:\Diplom — копия\Diplom\bin\Debug\Diplom.pdb
+D:\Diplom — копия\Diplom\bin\Debug\BouncyCastle.Cryptography.dll
+D:\Diplom — копия\Diplom\bin\Debug\EntityFramework.dll
+D:\Diplom — копия\Diplom\bin\Debug\EntityFramework.SqlServer.dll
+D:\Diplom — копия\Diplom\bin\Debug\itextsharp.dll
+D:\Diplom — копия\Diplom\bin\Debug\LiveCharts.dll
+D:\Diplom — копия\Diplom\bin\Debug\LiveCharts.Wpf.dll
+D:\Diplom — копия\Diplom\bin\Debug\MahApps.Metro.IconPacks.Core.dll
+D:\Diplom — копия\Diplom\bin\Debug\MahApps.Metro.IconPacks.Material.dll
+D:\Diplom — копия\Diplom\bin\Debug\MailKit.dll
+D:\Diplom — копия\Diplom\bin\Debug\MimeKit.dll
+D:\Diplom — копия\Diplom\bin\Debug\Newtonsoft.Json.dll
+D:\Diplom — копия\Diplom\bin\Debug\PresentationFramework.Aero2.dll
+D:\Diplom — копия\Diplom\bin\Debug\System.Buffers.dll
+D:\Diplom — копия\Diplom\bin\Debug\System.Formats.Asn1.dll
+D:\Diplom — копия\Diplom\bin\Debug\System.Memory.dll
+D:\Diplom — копия\Diplom\bin\Debug\System.Numerics.Vectors.dll
+D:\Diplom — копия\Diplom\bin\Debug\System.Runtime.CompilerServices.Unsafe.dll
+D:\Diplom — копия\Diplom\bin\Debug\System.Threading.Tasks.Extensions.dll
+D:\Diplom — копия\Diplom\bin\Debug\System.ValueTuple.dll
+D:\Diplom — копия\Diplom\bin\Debug\BouncyCastle.Cryptography.xml
+D:\Diplom — копия\Diplom\bin\Debug\EntityFramework.xml
+D:\Diplom — копия\Diplom\bin\Debug\EntityFramework.SqlServer.xml
+D:\Diplom — копия\Diplom\bin\Debug\itextsharp.xml
+D:\Diplom — копия\Diplom\bin\Debug\LiveCharts.pdb
+D:\Diplom — копия\Diplom\bin\Debug\LiveCharts.xml
+D:\Diplom — копия\Diplom\bin\Debug\LiveCharts.Wpf.pdb
+D:\Diplom — копия\Diplom\bin\Debug\LiveCharts.Wpf.xml
+D:\Diplom — копия\Diplom\bin\Debug\MahApps.Metro.IconPacks.Core.pdb
+D:\Diplom — копия\Diplom\bin\Debug\MahApps.Metro.IconPacks.Core.xml
+D:\Diplom — копия\Diplom\bin\Debug\MahApps.Metro.IconPacks.Material.pdb
+D:\Diplom — копия\Diplom\bin\Debug\MahApps.Metro.IconPacks.Material.xml
+D:\Diplom — копия\Diplom\bin\Debug\MailKit.pdb
+D:\Diplom — копия\Diplom\bin\Debug\MailKit.xml
+D:\Diplom — копия\Diplom\bin\Debug\MailKit.dll.config
+D:\Diplom — копия\Diplom\bin\Debug\MimeKit.pdb
+D:\Diplom — копия\Diplom\bin\Debug\MimeKit.xml
+D:\Diplom — копия\Diplom\bin\Debug\Newtonsoft.Json.xml
+D:\Diplom — копия\Diplom\bin\Debug\System.Buffers.xml
+D:\Diplom — копия\Diplom\bin\Debug\System.Formats.Asn1.xml
+D:\Diplom — копия\Diplom\bin\Debug\System.Memory.xml
+D:\Diplom — копия\Diplom\bin\Debug\System.Numerics.Vectors.xml
+D:\Diplom — копия\Diplom\bin\Debug\System.Runtime.CompilerServices.Unsafe.xml
+D:\Diplom — копия\Diplom\bin\Debug\System.Threading.Tasks.Extensions.xml
+D:\Diplom — копия\Diplom\bin\Debug\System.ValueTuple.xml
+D:\Diplom — копия\Diplom\bin\Debug\ru\EntityFramework.resources.dll
+D:\Diplom — копия\Diplom\bin\Debug\ru\EntityFramework.SqlServer.resources.dll
+D:\Diplom — копия\Diplom\obj\Debug\Diplom.csproj.AssemblyReference.cache
+D:\Diplom — копия\Diplom\obj\Debug\AddCategoryWindow.baml
+D:\Diplom — копия\Diplom\obj\Debug\AddProductWindow.baml
+D:\Diplom — копия\Diplom\obj\Debug\AddSuppliersWindow.baml
+D:\Diplom — копия\Diplom\obj\Debug\AddUserWindow.baml
+D:\Diplom — копия\Diplom\obj\Debug\AutorizationWindow.baml
+D:\Diplom — копия\Diplom\obj\Debug\MainP.baml
+D:\Diplom — копия\Diplom\obj\Debug\Pages\EmployeesPage.baml
+D:\Diplom — копия\Diplom\obj\Debug\Pages\MainPage.baml
+D:\Diplom — копия\Diplom\obj\Debug\Pages\NotificationsPage.baml
+D:\Diplom — копия\Diplom\obj\Debug\Pages\PaymentHistoryPage.baml
+D:\Diplom — копия\Diplom\obj\Debug\Pages\PaymentPage.baml
+D:\Diplom — копия\Diplom\obj\Debug\Pages\PostOKPage.baml
+D:\Diplom — копия\Diplom\obj\Debug\Pages\PostVKPage.baml
+D:\Diplom — копия\Diplom\obj\Debug\Pages\ProductsPage.baml
+D:\Diplom — копия\Diplom\obj\Debug\ToastNotificationWindow.baml
+D:\Diplom — копия\Diplom\obj\Debug\AddCategoryWindow.g.cs
+D:\Diplom — копия\Diplom\obj\Debug\AddProductWindow.g.cs
+D:\Diplom — копия\Diplom\obj\Debug\AddSuppliersWindow.g.cs
+D:\Diplom — копия\Diplom\obj\Debug\AddUserWindow.g.cs
+D:\Diplom — копия\Diplom\obj\Debug\AutorizationWindow.g.cs
+D:\Diplom — копия\Diplom\obj\Debug\MainP.g.cs
+D:\Diplom — копия\Diplom\obj\Debug\Pages\CategoriesPage.g.cs
+D:\Diplom — копия\Diplom\obj\Debug\Pages\EmailPage.g.cs
+D:\Diplom — копия\Diplom\obj\Debug\Pages\EmployeesPage.g.cs
+D:\Diplom — копия\Diplom\obj\Debug\Pages\MainPage.g.cs
+D:\Diplom — копия\Diplom\obj\Debug\Pages\NotificationsPage.g.cs
+D:\Diplom — копия\Diplom\obj\Debug\Pages\PaymentHistoryPage.g.cs
+D:\Diplom — копия\Diplom\obj\Debug\Pages\PaymentPage.g.cs
+D:\Diplom — копия\Diplom\obj\Debug\Pages\PostOKPage.g.cs
+D:\Diplom — копия\Diplom\obj\Debug\Pages\PostVKPage.g.cs
+D:\Diplom — копия\Diplom\obj\Debug\Pages\ProductsPage.g.cs
+D:\Diplom — копия\Diplom\obj\Debug\Pages\ProfilePage.g.cs
+D:\Diplom — копия\Diplom\obj\Debug\Pages\SuppliersPage.g.cs
+D:\Diplom — копия\Diplom\obj\Debug\ToastNotificationWindow.g.cs
+D:\Diplom — копия\Diplom\obj\Debug\App.g.cs
+D:\Diplom — копия\Diplom\obj\Debug\Diplom_Content.g.cs
+D:\Diplom — копия\Diplom\obj\Debug\Diplom_MarkupCompile.cache
+D:\Diplom — копия\Diplom\obj\Debug\Diplom_MarkupCompile.lref
+D:\Diplom — копия\Diplom\obj\Debug\App.baml
+D:\Diplom — копия\Diplom\obj\Debug\Pages\CategoriesPage.baml
+D:\Diplom — копия\Diplom\obj\Debug\Pages\EmailPage.baml
+D:\Diplom — копия\Diplom\obj\Debug\Pages\ProfilePage.baml
+D:\Diplom — копия\Diplom\obj\Debug\Pages\SuppliersPage.baml
+D:\Diplom — копия\Diplom\obj\Debug\Diplom.g.resources
+D:\Diplom — копия\Diplom\obj\Debug\Diplom.Properties.Resources.resources
+D:\Diplom — копия\Diplom\obj\Debug\Diplom.csproj.GenerateResource.cache
+D:\Diplom — копия\Diplom\obj\Debug\Diplom.csproj.CoreCompileInputs.cache
+D:\Diplom — копия\Diplom\obj\Debug\Diplom.csproj.CopyComplete
+D:\Diplom — копия\Diplom\obj\Debug\Diplom.exe
+D:\Diplom — копия\Diplom\obj\Debug\Diplom.pdb

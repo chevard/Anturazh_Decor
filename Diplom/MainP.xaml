@@ -1,0 +1,93 @@
+﻿<Window x:Class="Diplom.MainP"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:Icon="http://metro.mahapps.com/winfx/xaml/iconpacks"  
+        xmlns:lvc="clr-namespace:LiveCharts.Wpf;assembly=LiveCharts.Wpf"
+        Title="MainP" 
+        Height="780" 
+        Width="1280" 
+        Background="Transparent"
+        AllowsTransparency="True" 
+        WindowStyle="None" 
+        WindowStartupLocation="CenterScreen">
+
+    <Border Background="#FF330606" CornerRadius="40" BorderThickness="2" BorderBrush="#8B0000" MouseDown="Border_MouseDown">
+        <Border.Effect>
+            <DropShadowEffect BlurRadius="15" ShadowDepth="5" Opacity="0.5"/>
+        </Border.Effect>
+        <Grid Margin="15">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="130"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="70"/>
+                <RowDefinition Height="*"/>
+            </Grid.RowDefinitions>
+            <StackPanel Grid.Column="1" Orientation="Horizontal" VerticalAlignment="Center" Margin="20,0">
+                <Icon:PackIconMaterial Kind="Store" Width="32" Height="32" Foreground="White"/>
+                <TextBlock Text="УПРАВЛЕНИЕ МАГАЗИНОМ" Foreground="White" FontSize="24" FontWeight="Bold" Margin="15,0,0,0" VerticalAlignment="Center"/>
+            </StackPanel>
+            <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center">
+                <Button Name="PostVKBtn" Style="{StaticResource TopBarButton}" Margin="5" Click="PostVKBtn_Click">
+                    <Button.Background>
+                        <ImageBrush ImageSource="/icons8-vk-480.png" Stretch="Uniform"/>
+                    </Button.Background>
+                </Button>
+                <Button Name="ProfilePageBtn" Style="{StaticResource TopBarButton}" Background="#8B0000" Click="ProfilePageBtn_Click">
+                    <Icon:PackIconMaterial Kind="Cog" Width="20" Height="20" Foreground="White"/>
+                </Button>
+                <Button Style="{StaticResource TopBarButton}" Background="#FFD73636" Click="Button_Click_1">
+                    <Icon:PackIconMaterial Kind="Minus" Width="20" Height="20" Foreground="White"/>
+                </Button>
+                <Button Style="{StaticResource TopBarButton}" Background="#FF920C0C" Margin="5,5,0,5" Click="Button_Click">
+                    <Icon:PackIconMaterial Kind="Close" Width="20" Height="20" Foreground="White"/>
+                </Button>
+            </StackPanel>
+            <Border Grid.Row="1" Background="#8B0000" CornerRadius="30" Margin="20,20,20,0">
+                <Border.Effect>
+                    <DropShadowEffect BlurRadius="10" ShadowDepth="2" Opacity="0.3"/>
+                </Border.Effect>
+                <StackPanel>
+                    <Border Width="70" Height="70" CornerRadius="35" Margin="0,10,0,5" BorderThickness="2" BorderBrush="#FFD73636">
+                        <Border.Effect>
+                            <DropShadowEffect BlurRadius="10" ShadowDepth="2" Opacity="0.3"/>
+                        </Border.Effect>
+                        <Border.Background>
+                            <ImageBrush x:Name="pic" ImageSource="{Binding PhotoPath}" Stretch="UniformToFill"/>
+                        </Border.Background>
+                    </Border>
+                    <TextBlock Name="Usernamee" Width="80" TextWrapping="Wrap" Margin="0,0,0,10" TextAlignment="Center" Foreground="White" FontWeight="SemiBold"/>
+                    <Separator Height="1" Background="#FFD73636" Margin="15,0"/>
+                    <Button x:Name="HomeBtn" Style="{StaticResource MenuButton}" Background="#FF450707" Click="HomeBtn_Click">
+                        <Icon:PackIconMaterial Kind="HomeVariant" Style="{StaticResource MenuIcon}"/>
+                    </Button>
+                    <Button Name="ProductsPageBtn" Style="{StaticResource MenuButton}" Click="ProductsPageBtn_Click">
+                        <Icon:PackIconMaterial Kind="Package" Style="{StaticResource MenuIcon}"/>
+                    </Button>
+                    <Button Name="CaterogoriesgeBtn" Style="{StaticResource MenuButton}" Click="CaterogoriesgeBtn_Click">
+                        <Icon:PackIconMaterial Kind="Tab" Style="{StaticResource MenuIcon}"/>
+                    </Button>
+                    <Button Name="EmployeesPageBtn" Style="{StaticResource MenuButton}" Click="EmployeesPageBtn_Click">
+                        <Icon:PackIconMaterial Kind="AccountGroup" Style="{StaticResource MenuIcon}"/>
+                    </Button>
+                    <Button Name="SuppliersPageBtn" Style="{StaticResource MenuButton}" Click="SuppliersPageBtn_Click">
+                        <Icon:PackIconMaterial Kind="Truck" Style="{StaticResource MenuIcon}"/>
+                    </Button>
+                    <Button Name="HistoryPageBtn" Style="{StaticResource MenuButton}" Click="HistoryPageBtn_Click">
+                        <Icon:PackIconMaterial Kind="History" Style="{StaticResource MenuIcon}"/>
+                    </Button>
+                    <Button Name="PaymentPageBtn" Style="{StaticResource MenuButton}" Click="PaymentPageBtn_Click">
+                        <Icon:PackIconMaterial Kind="Wallet" Style="{StaticResource MenuIcon}"/>
+                    </Button>
+                </StackPanel>
+            </Border>
+            <Border Grid.Column="1" Grid.Row="1" Background="#FFF8F0F0" CornerRadius="30" Margin="20">
+                <Border.Effect>
+                    <DropShadowEffect BlurRadius="10" ShadowDepth="2" Opacity="0.2"/>
+                </Border.Effect>
+                <Frame Name="MFrame" NavigationUIVisibility="Hidden"/>
+            </Border>
+        </Grid>
+    </Border>
+</Window>

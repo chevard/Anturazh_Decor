@@ -1,0 +1,176 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AnturazhBDModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityContainer Name="AnturazhBDEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="OrderDetails" EntityType="AnturazhBDModel.OrderDetails" />
+    <EntitySet Name="ProductCategories" EntityType="AnturazhBDModel.ProductCategories" />
+    <EntitySet Name="Products" EntityType="AnturazhBDModel.Products" />
+    <EntitySet Name="Roles" EntityType="AnturazhBDModel.Roles" />
+    <EntitySet Name="Suppliers" EntityType="AnturazhBDModel.Suppliers" />
+    <EntitySet Name="Users" EntityType="AnturazhBDModel.Users" />
+    <AssociationSet Name="FK__OrderDeta__Categ__6319B466" Association="AnturazhBDModel.FK__OrderDeta__Categ__6319B466">
+      <End Role="ProductCategories" EntitySet="ProductCategories" />
+      <End Role="OrderDetails" EntitySet="OrderDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK__OrderDeta__Produ__6225902D" Association="AnturazhBDModel.FK__OrderDeta__Produ__6225902D">
+      <End Role="Products" EntitySet="Products" />
+      <End Role="OrderDetails" EntitySet="OrderDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK__OrderDeta__UserI__640DD89F" Association="AnturazhBDModel.FK__OrderDeta__UserI__640DD89F">
+      <End Role="Users" EntitySet="Users" />
+      <End Role="OrderDetails" EntitySet="OrderDetails" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Products__Catego__589C25F3" Association="AnturazhBDModel.FK__Products__Catego__589C25F3">
+      <End Role="ProductCategories" EntitySet="ProductCategories" />
+      <End Role="Products" EntitySet="Products" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Products__Suppli__59904A2C" Association="AnturazhBDModel.FK__Products__Suppli__59904A2C">
+      <End Role="Suppliers" EntitySet="Suppliers" />
+      <End Role="Products" EntitySet="Products" />
+    </AssociationSet>
+    <AssociationSet Name="FK__Users__RoleID__5E54FF49" Association="AnturazhBDModel.FK__Users__RoleID__5E54FF49">
+      <End Role="Roles" EntitySet="Roles" />
+      <End Role="Users" EntitySet="Users" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="OrderDetails">
+    <Key>
+      <PropertyRef Name="OrderDetailID" />
+    </Key>
+    <Property Name="OrderDetailID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProductID" Type="Int32" />
+    <Property Name="CategoryID" Type="Int32" />
+    <Property Name="UserID" Type="Int32" />
+    <Property Name="Quantity" Type="Int32" />
+    <Property Name="Total" Type="Decimal" Precision="10" Scale="2" />
+    <Property Name="PaymentDate" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="ProductCategories" Relationship="AnturazhBDModel.FK__OrderDeta__Categ__6319B466" FromRole="OrderDetails" ToRole="ProductCategories" />
+    <NavigationProperty Name="Products" Relationship="AnturazhBDModel.FK__OrderDeta__Produ__6225902D" FromRole="OrderDetails" ToRole="Products" />
+    <NavigationProperty Name="Users" Relationship="AnturazhBDModel.FK__OrderDeta__UserI__640DD89F" FromRole="OrderDetails" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="ProductCategories">
+    <Key>
+      <PropertyRef Name="CategoryID" />
+    </Key>
+    <Property Name="CategoryID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CategoryName" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="OrderDetails" Relationship="AnturazhBDModel.FK__OrderDeta__Categ__6319B466" FromRole="ProductCategories" ToRole="OrderDetails" />
+    <NavigationProperty Name="Products" Relationship="AnturazhBDModel.FK__Products__Catego__589C25F3" FromRole="ProductCategories" ToRole="Products" />
+  </EntityType>
+  <EntityType Name="Products">
+    <Key>
+      <PropertyRef Name="ProductID" />
+    </Key>
+    <Property Name="ProductID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ProductName" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="CategoryID" Type="Int32" />
+    <Property Name="Price" Type="Decimal" Nullable="false" Precision="10" Scale="2" />
+    <Property Name="StockQuantity" Type="Int32" />
+    <Property Name="SupplierID" Type="Int32" />
+    <NavigationProperty Name="OrderDetails" Relationship="AnturazhBDModel.FK__OrderDeta__Produ__6225902D" FromRole="Products" ToRole="OrderDetails" />
+    <NavigationProperty Name="ProductCategories" Relationship="AnturazhBDModel.FK__Products__Catego__589C25F3" FromRole="Products" ToRole="ProductCategories" />
+    <NavigationProperty Name="Suppliers" Relationship="AnturazhBDModel.FK__Products__Suppli__59904A2C" FromRole="Products" ToRole="Suppliers" />
+  </EntityType>
+  <EntityType Name="Roles">
+    <Key>
+      <PropertyRef Name="RoleID" />
+    </Key>
+    <Property Name="RoleID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="RoleName" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Users" Relationship="AnturazhBDModel.FK__Users__RoleID__5E54FF49" FromRole="Roles" ToRole="Users" />
+  </EntityType>
+  <EntityType Name="Suppliers">
+    <Key>
+      <PropertyRef Name="SupplierID" />
+    </Key>
+    <Property Name="SupplierID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SupplierName" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="EmailSupplier" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="PhoneNum" Type="String" MaxLength="20" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Products" Relationship="AnturazhBDModel.FK__Products__Suppli__59904A2C" FromRole="Suppliers" ToRole="Products" />
+  </EntityType>
+  <EntityType Name="Users">
+    <Key>
+      <PropertyRef Name="UserID" />
+    </Key>
+    <Property Name="UserID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FullName" Type="String" Nullable="false" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="UserName" Type="String" Nullable="false" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="PasswordHash" Type="String" Nullable="false" MaxLength="255" FixedLength="false" Unicode="true" />
+    <Property Name="RoleID" Type="Int32" />
+    <Property Name="PhotoPath" Type="String" MaxLength="255" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="OrderDetails" Relationship="AnturazhBDModel.FK__OrderDeta__UserI__640DD89F" FromRole="Users" ToRole="OrderDetails" />
+    <NavigationProperty Name="Roles" Relationship="AnturazhBDModel.FK__Users__RoleID__5E54FF49" FromRole="Users" ToRole="Roles" />
+  </EntityType>
+  <Association Name="FK__OrderDeta__Categ__6319B466">
+    <End Type="AnturazhBDModel.ProductCategories" Role="ProductCategories" Multiplicity="0..1" />
+    <End Type="AnturazhBDModel.OrderDetails" Role="OrderDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductCategories">
+        <PropertyRef Name="CategoryID" />
+      </Principal>
+      <Dependent Role="OrderDetails">
+        <PropertyRef Name="CategoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__OrderDeta__Produ__6225902D">
+    <End Type="AnturazhBDModel.Products" Role="Products" Multiplicity="0..1" />
+    <End Type="AnturazhBDModel.OrderDetails" Role="OrderDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Products">
+        <PropertyRef Name="ProductID" />
+      </Principal>
+      <Dependent Role="OrderDetails">
+        <PropertyRef Name="ProductID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__OrderDeta__UserI__640DD89F">
+    <End Type="AnturazhBDModel.Users" Role="Users" Multiplicity="0..1" />
+    <End Type="AnturazhBDModel.OrderDetails" Role="OrderDetails" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Users">
+        <PropertyRef Name="UserID" />
+      </Principal>
+      <Dependent Role="OrderDetails">
+        <PropertyRef Name="UserID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Products__Catego__589C25F3">
+    <End Type="AnturazhBDModel.ProductCategories" Role="ProductCategories" Multiplicity="0..1" />
+    <End Type="AnturazhBDModel.Products" Role="Products" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ProductCategories">
+        <PropertyRef Name="CategoryID" />
+      </Principal>
+      <Dependent Role="Products">
+        <PropertyRef Name="CategoryID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Products__Suppli__59904A2C">
+    <End Type="AnturazhBDModel.Suppliers" Role="Suppliers" Multiplicity="0..1" />
+    <End Type="AnturazhBDModel.Products" Role="Products" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Suppliers">
+        <PropertyRef Name="SupplierID" />
+      </Principal>
+      <Dependent Role="Products">
+        <PropertyRef Name="SupplierID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK__Users__RoleID__5E54FF49">
+    <End Type="AnturazhBDModel.Roles" Role="Roles" Multiplicity="0..1" />
+    <End Type="AnturazhBDModel.Users" Role="Users" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Roles">
+        <PropertyRef Name="RoleID" />
+      </Principal>
+      <Dependent Role="Users">
+        <PropertyRef Name="RoleID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

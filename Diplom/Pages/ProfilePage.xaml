@@ -1,0 +1,75 @@
+﻿<Page x:Class="Diplom.Pages.ProfilePage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:Icon="http://metro.mahapps.com/winfx/xaml/iconpacks"
+      xmlns:local="clr-namespace:Diplom.Pages"
+      mc:Ignorable="d" 
+      d:DesignHeight="750" d:DesignWidth="1175"
+      Title="ProfilePage">
+
+    <Grid Background="#FFF8F0F0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="50"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Border Grid.Row="0" Background="#FFF8F0F0" BorderThickness="0,0,0,1" BorderBrush="#FFE0E0E0">
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="20,0,0,0">
+                <Icon:PackIconMaterial Kind="AccountCog" Width="24" Height="24" Foreground="#FF920C0C" VerticalAlignment="Center"/>
+                <TextBlock Text="Настройки профиля" FontSize="24" FontWeight="Bold" Foreground="#FF920C0C" VerticalAlignment="Center" Margin="10,0,0,0"/>
+            </StackPanel>
+        </Border>
+        <Border Grid.Row="1" Background="White" CornerRadius="15" Margin="15">
+            <Grid>
+                <StackPanel Margin="0,15,0,15">
+                    <Border Width="120" Height="120" CornerRadius="60" Background="#FFF8F0F0" Margin="0,0,0,10" HorizontalAlignment="Center">
+                        <Ellipse>
+                            <Ellipse.Fill>
+                                <ImageBrush x:Name="pic" ImageSource="{Binding PhotoPath}" Stretch="UniformToFill"/>
+                            </Ellipse.Fill>
+                        </Ellipse>
+                    </Border>
+                    <Button Content="Изменить фото" Style="{StaticResource ProfileButton}" Margin="0,0,0,15" Click="ChangePhoto_Click">
+                        <Button.Background>
+                            <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                                <GradientStop Color="#FFD73636" Offset="0"/>
+                                <GradientStop Color="#FF920C0C" Offset="1"/>
+                            </LinearGradientBrush>
+                        </Button.Background>
+                    </Button>
+                    <Border Width="350" Background="#FFF8F0F0" CornerRadius="12" Padding="15" HorizontalAlignment="Center">
+                        <StackPanel>
+                            <TextBlock Text="Имя" FontWeight="SemiBold" FontSize="14" Foreground="#FF920C0C"/>
+                            <TextBox Name="FullNameTB" Style="{StaticResource ProfileTextBox}" IsReadOnly="True"/>
+                            <TextBlock Text="Роль" FontWeight="SemiBold" FontSize="14" Foreground="#FF920C0C"/>
+                            <TextBox Name="RoleTB" Style="{StaticResource ProfileTextBox}" IsReadOnly="True"/>
+                            <TextBlock Text="Логин" FontWeight="SemiBold" FontSize="14" Foreground="#FF920C0C"/>
+                            <TextBox Name="LoginTB" Style="{StaticResource ProfileTextBox}" IsReadOnly="True"/>
+                            <TextBlock Text="Пароль" FontWeight="SemiBold" FontSize="14" Foreground="#FF920C0C"/>
+                            <TextBox Name="PasswordTB" Style="{StaticResource ProfileTextBox}" IsReadOnly="True"/>
+                        </StackPanel>
+                    </Border>
+                    <StackPanel Orientation="Horizontal" Margin="0,15,0,0" HorizontalAlignment="Center">
+                        <Button x:Name="EditProfileButton" Content="Редактировать" Style="{StaticResource ProfileButton}" Click="EditProfile_Click">
+                            <Button.Background>
+                                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                                    <GradientStop Color="#FFD73636" Offset="0"/>
+                                    <GradientStop Color="#FF920C0C" Offset="1"/>
+                                </LinearGradientBrush>
+                            </Button.Background>
+                        </Button>
+                        <Button x:Name="SaveButton" Content="Сохранить" Style="{StaticResource ProfileButton}" Click="SaveChanges_Click" Visibility="Collapsed">
+                            <Button.Background>
+                                <LinearGradientBrush StartPoint="0,0" EndPoint="1,1">
+                                    <GradientStop Color="#FFD73636" Offset="0"/>
+                                    <GradientStop Color="#FF920C0C" Offset="1"/>
+                                </LinearGradientBrush>
+                            </Button.Background>
+                        </Button>
+                    </StackPanel>
+                </StackPanel>
+            </Grid>
+        </Border>
+    </Grid>
+</Page>

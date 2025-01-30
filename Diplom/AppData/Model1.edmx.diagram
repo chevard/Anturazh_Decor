@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="11593067016948e288c0367fe7282ed3" Name="Diagram1" ZoomLevel="85">
+        <EntityTypeShape EntityType="AnturazhBDModel.OrderDetails" Width="1.5" PointX="3" PointY="4.25" />
+        <EntityTypeShape EntityType="AnturazhBDModel.ProductCategories" Width="1.5" PointX="0.75" PointY="4.875" />
+        <EntityTypeShape EntityType="AnturazhBDModel.Products" Width="1.5" PointX="6" PointY="4.375" />
+        <EntityTypeShape EntityType="AnturazhBDModel.Roles" Width="1.5" PointX="1.5" PointY="8.75" />
+        <EntityTypeShape EntityType="AnturazhBDModel.Suppliers" Width="1.5" PointX="3.75" PointY="0.75" />
+        <EntityTypeShape EntityType="AnturazhBDModel.Users" Width="1.5" PointX="0.75" PointY="1.125" />
+        <AssociationConnector Association="AnturazhBDModel.FK__OrderDeta__Categ__6319B466" />
+        <AssociationConnector Association="AnturazhBDModel.FK__OrderDeta__Produ__6225902D" />
+        <AssociationConnector Association="AnturazhBDModel.FK__OrderDeta__UserI__640DD89F" />
+        <AssociationConnector Association="AnturazhBDModel.FK__Products__Catego__589C25F3" />
+        <AssociationConnector Association="AnturazhBDModel.FK__Products__Suppli__59904A2C" />
+        <AssociationConnector Association="AnturazhBDModel.FK__Users__RoleID__5E54FF49" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>
