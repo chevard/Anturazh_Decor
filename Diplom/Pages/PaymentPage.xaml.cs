@@ -41,20 +41,24 @@ namespace Diplom.Pages
 
             if (selectedProduct != null)
             {
+                // Проверяем, сколько товара осталось
                 if (selectedProduct.StockQuantity < 1)
                 {
                     MessageBox.Show("Товар закончился!", "Ошибка", MessageBoxButton.OK, MessageBoxImage.Error);
                     return;
                 }
+                // Ищем продукт в списке selectedProducts
                 var existingOrderDetail = selectedProducts.FirstOrDefault(p => p.ProductID == selectedProduct.ProductID);
 
                 if (existingOrderDetail != null)
                 {
+                    // Если продукт уже есть в selectedProducts, увеличиваем его количество
                     existingOrderDetail.Quantity++;
                     existingOrderDetail.Total = existingOrderDetail.Quantity * selectedProduct.Price;
                 }
                 else
                 {
+                    // Если товара нет в selectedProducts, добавляем новый
                     var orderDetail = new OrderDetails
                     {
                         ProductID = selectedProduct.ProductID,
@@ -68,14 +72,18 @@ namespace Diplom.Pages
                     selectedProducts.Add(orderDetail);
                 }
 
+                // Уменьшаем количество товара в DG2
                 selectedProduct.StockQuantity--;
 
+                // Обновляем таблицу с товарами (DG2)
                 DG2.ItemsSource = null;
                 DG2.ItemsSource = ConDB.context.Products.ToList();
 
+                // Обновляем нижнюю таблицу
                 DG.ItemsSource = null;
                 DG.ItemsSource = selectedProducts;
 
+                // Пересчитываем итоговую сумму
                 decimal total = selectedProducts.Sum(item => item.Total ?? 0);
                 totaltxt.Text = total.ToString("F2");
             }
@@ -88,12 +96,15 @@ namespace Diplom.Pages
 
             if (selectedOrderDetail != null)
             {
+                // Находим товар в Products
                 var productToUpdate = ConDB.context.Products.FirstOrDefault(p => p.ProductID == selectedOrderDetail.ProductID);
 
                 if (productToUpdate != null)
                 {
+                    // Восстанавливаем количество товара в Products на 1 единицу
                     productToUpdate.StockQuantity++;
 
+                    // Если количество товара стало 0, удаляем его
                     if (productToUpdate.StockQuantity <= 0)
                     {
                         ConDB.context.Products.Remove(productToUpdate);
@@ -101,22 +112,28 @@ namespace Diplom.Pages
                     }
                 }
 
+                // Уменьшаем количество товара на 1 в selectedProducts
                 selectedOrderDetail.Quantity--;
 
+                // Если количество товара в selectedProducts стало 0, удаляем его
                 if (selectedOrderDetail.Quantity == 0)
                 {
                     selectedProducts.Remove(selectedOrderDetail);
                 }
 
+                // Обновляем таблицу с выбранными товарами (DG)
                 DG.ItemsSource = null;
                 DG.ItemsSource = selectedProducts;
 
+                // Обновляем таблицу с продуктами (DG2)
                 DG2.ItemsSource = null;
                 DG2.ItemsSource = ConDB.context.Products.ToList();
 
+                // Пересчитываем итоговую сумму
                 decimal total = selectedProducts.Sum(item => item.Total ?? 0);
                 totaltxt.Text = total.ToString("F2");
 
+                // Сохраняем изменения в базе данных
                 ConDB.context.SaveChanges();
             }
         }
@@ -273,16 +290,20 @@ namespace Diplom.Pages
 
                     document.Close();
 
+                    // Создаем временный файл
                     string tempFile = System.IO.Path.GetTempFileName() + ".pdf";
                     File.WriteAllBytes(tempFile, stream.ToArray());
 
+                    // Открываем файл и удаляем его после закрытия
                     var process = new System.Diagnostics.Process();
                     process.StartInfo.FileName = tempFile;
                     process.StartInfo.UseShellExecute = true;
                     process.Start();
 
+                    // Ждем немного, чтобы файл успел открыться
                     System.Threading.Thread.Sleep(2000);
 
+                    // Удаляем временный файл
                     File.Delete(tempFile);
                 }
 
