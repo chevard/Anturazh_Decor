@@ -29,6 +29,9 @@
                 <TextBlock Text="УПРАВЛЕНИЕ МАГАЗИНОМ" Foreground="White" FontSize="24" FontWeight="Bold" Margin="15,0,0,0" VerticalAlignment="Center"/>
             </StackPanel>
             <StackPanel Grid.Column="1" Orientation="Horizontal" HorizontalAlignment="Right" VerticalAlignment="Center">
+                <Button x:Name="MailPageBtn" Style="{StaticResource TopBarButton}" Background="#8B0000" Click="MailPageBtn_Click">
+                    <Icon:PackIconMaterial Kind="Email" Width="20" Height="20" Foreground="White"/>
+                </Button>
                 <Button Name="PostVKBtn" Style="{StaticResource TopBarButton}" Margin="5" Click="PostVKBtn_Click">
                     <Button.Background>
                         <ImageBrush ImageSource="/icons8-vk-480.png" Stretch="Uniform"/>
@@ -59,6 +62,9 @@
                     </Border>
                     <TextBlock Name="Usernamee" Width="80" TextWrapping="Wrap" Margin="0,0,0,10" TextAlignment="Center" Foreground="White" FontWeight="SemiBold"/>
                     <Separator Height="1" Background="#FFD73636" Margin="15,0"/>
+                    <Button Name="BellBtn" Style="{StaticResource MenuButton}" Click="BellBtn_Click">
+                        <Icon:PackIconMaterial Name="BellIcon" Kind="Bell" Style="{StaticResource MenuIcon}"/>
+                    </Button>
                     <Button x:Name="HomeBtn" Style="{StaticResource MenuButton}" Background="#FF450707" Click="HomeBtn_Click">
                         <Icon:PackIconMaterial Kind="HomeVariant" Style="{StaticResource MenuIcon}"/>
                     </Button>
@@ -73,6 +79,9 @@
                     </Button>
                     <Button Name="SuppliersPageBtn" Style="{StaticResource MenuButton}" Click="SuppliersPageBtn_Click">
                         <Icon:PackIconMaterial Kind="Truck" Style="{StaticResource MenuIcon}"/>
+                    </Button>
+                    <Button Name="HistoryPageBtn" Style="{StaticResource MenuButton}" Click="HistoryPageBtn_Click">
+                        <Icon:PackIconMaterial Kind="History" Style="{StaticResource MenuIcon}"/>
                     </Button>
                     <Button Name="PaymentPageBtn" Style="{StaticResource MenuButton}" Click="PaymentPageBtn_Click">
                         <Icon:PackIconMaterial Kind="Wallet" Style="{StaticResource MenuIcon}"/>

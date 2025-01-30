@@ -1,0 +1,65 @@
+﻿<Page x:Class="Diplom.Pages.NotificationsPage"
+      xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+      xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+      xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+      xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+      xmlns:Icon="http://metro.mahapps.com/winfx/xaml/iconpacks"
+      mc:Ignorable="d" 
+      d:DesignHeight="750" 
+      d:DesignWidth="1175"
+      Title="NotificationsPage">
+
+
+    <Grid Background="#FFF8F0F0">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Border Grid.Row="0" Background="#FFF8F0F0" BorderThickness="0,0,0,1" BorderBrush="#FFE0E0E0">
+            <Grid>
+                <StackPanel Orientation="Horizontal" VerticalAlignment="Center" Margin="30,0,0,0">
+                    <Icon:PackIconMaterial Kind="Bell" Width="30" Height="30" Foreground="#FF920C0C" VerticalAlignment="Center"/>
+                    <TextBlock Text="Уведомления" FontSize="28" FontWeight="Bold" Foreground="#FF920C0C" VerticalAlignment="Center" Margin="15,0,0,0"/>
+                </StackPanel>
+            </Grid>
+        </Border>
+        <Border Grid.Row="1" Background="White" CornerRadius="20" Margin="20">
+            <Border.Effect>
+                <DropShadowEffect BlurRadius="10" ShadowDepth="2" Opacity="0.2"/>
+            </Border.Effect>
+            <Grid>
+                <ListView Name="NotificationsListView" BorderThickness="0" Background="Transparent" ScrollViewer.HorizontalScrollBarVisibility="Disabled" ItemContainerStyle="{StaticResource ListViewItemStyle}" d:ItemsSource="{d:SampleData ItemCount=5}">
+                    <ListView.ItemTemplate>
+                        <DataTemplate>
+                            <Grid>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="Auto"/>
+                                    <ColumnDefinition Width="*"/>
+                                    <ColumnDefinition Width="Auto"/>
+                                </Grid.ColumnDefinitions>
+                                <Border Background="#15920C0C" CornerRadius="10" Width="45" Height="45">
+                                    <Icon:PackIconMaterial Kind="BellRing" Width="25" Height="25" Foreground="#FF920C0C" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                                </Border>
+                                <StackPanel Grid.Column="1" Margin="15,0">
+                                    <TextBlock Text="{Binding Message}" FontWeight="SemiBold" FontSize="16" Foreground="#FF333333" TextWrapping="Wrap"/>
+                                </StackPanel>
+                                <StackPanel Grid.Column="2" HorizontalAlignment="Right">
+                                    <TextBlock Text="{Binding Date}" FontSize="14" Foreground="#FF666666"/>
+                                </StackPanel>
+                            </Grid>
+                        </DataTemplate>
+                    </ListView.ItemTemplate>
+                </ListView>
+                <Grid x:Name="NoNotificationsPanel" Visibility="Collapsed">
+                    <StackPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                        <Border Width="80" Height="80" Background="#15920C0C" CornerRadius="40">
+                            <Icon:PackIconMaterial Kind="BellOff" Width="40" Height="40" Foreground="#FF920C0C" HorizontalAlignment="Center" VerticalAlignment="Center"/>
+                        </Border>
+                        <TextBlock Text="Нет новых уведомлений" FontSize="18" FontWeight="SemiBold" Foreground="#FF920C0C" HorizontalAlignment="Center" Margin="0,20,0,0"/>
+                        <TextBlock Text="Здесь будут появляться важные сообщения" FontSize="14" Foreground="#FF666666" HorizontalAlignment="Center" Margin="0,10,0,0"/>
+                    </StackPanel>
+                </Grid>
+            </Grid>
+        </Border>
+    </Grid>
+</Page>

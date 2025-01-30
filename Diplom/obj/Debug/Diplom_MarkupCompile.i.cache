@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\Diplom — копия — копия\Diplom\obj\Debug\
+C:\Users\admin\source\repos\Diplom\Diplom\obj\Debug\
 Diplom
 none
 false
 DEBUG;TRACE
-D:\Diplom — копия — копия\Diplom\App.xaml
-161849229547
+C:\Users\admin\source\repos\Diplom\Diplom\App.xaml
+19-727441572
 41461636691
-34-2106295229
-1421109706355
-AddCategoryWindow.xaml;AddProductWindow.xaml;AddSuppliersWindow.xaml;AddUserWindow.xaml;AutorizationWindow.xaml;MainP.xaml;Pages\CategoriesPage.xaml;Pages\EmployeesPage.xaml;Pages\MainPage.xaml;Pages\PaymentPage.xaml;Pages\PostOKPage.xaml;Pages\PostVKPage.xaml;Pages\ProductsPage.xaml;Pages\ProfilePage.xaml;Pages\SuppliersPage.xaml;ToastNotificationWindow.xaml;
+371936777326
+1421406069083
+AddCategoryWindow.xaml;AddProductWindow.xaml;AddSuppliersWindow.xaml;AddUserWindow.xaml;AutorizationWindow.xaml;MainP.xaml;Pages\CategoriesPage.xaml;Pages\EmailPage.xaml;Pages\EmployeesPage.xaml;Pages\MainPage.xaml;Pages\NotificationsPage.xaml;Pages\PaymentHistoryPage.xaml;Pages\PaymentPage.xaml;Pages\PostOKPage.xaml;Pages\PostVKPage.xaml;Pages\ProductsPage.xaml;Pages\ProfilePage.xaml;Pages\SuppliersPage.xaml;ToastNotificationWindow.xaml;
 
-False
+True
 

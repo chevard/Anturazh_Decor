@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-D:\Diplom — копия — копия\Diplom\obj\Debug\
+D:\Diplom — копия\Diplom\obj\Debug\
 Diplom
 none
 false
 DEBUG;TRACE
-D:\Diplom — копия — копия\Diplom\App.xaml
+D:\Diplom — копия\Diplom\App.xaml
 19-727441572
 41461636691
-371936777326
-1421109706355
+36-276101352
+1422027059351
 AddCategoryWindow.xaml;AddProductWindow.xaml;AddSuppliersWindow.xaml;AddUserWindow.xaml;AutorizationWindow.xaml;MainP.xaml;Pages\CategoriesPage.xaml;Pages\EmailPage.xaml;Pages\EmployeesPage.xaml;Pages\MainPage.xaml;Pages\NotificationsPage.xaml;Pages\PaymentHistoryPage.xaml;Pages\PaymentPage.xaml;Pages\PostOKPage.xaml;Pages\PostVKPage.xaml;Pages\ProductsPage.xaml;Pages\ProfilePage.xaml;Pages\SuppliersPage.xaml;ToastNotificationWindow.xaml;
 
-True
+False
 
